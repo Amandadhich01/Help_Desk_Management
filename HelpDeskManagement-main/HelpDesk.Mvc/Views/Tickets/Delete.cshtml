@@ -1,0 +1,27 @@
+﻿@model HelpDesk.Mvc.Models.Ticket
+
+<h2>Delete Ticket</h2>
+
+<h4>Are you sure?</h4>
+
+<div>
+
+    <p><b>Title:</b> @Model.Title</p>
+
+    <p><b>Description:</b> @Model.Description</p>
+
+</div>
+
+<form asp-action="Delete">
+
+    <input asp-for="Id" type="hidden" />
+
+    <button class="btn btn-danger">
+        Delete
+    </button>
+
+</form>
+
+<br />
+
+<a asp-action="Index">Cancel</a>

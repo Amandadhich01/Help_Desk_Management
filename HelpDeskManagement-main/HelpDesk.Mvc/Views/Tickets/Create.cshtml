@@ -1,0 +1,30 @@
+﻿@model HelpDesk.Mvc.Models.Ticket
+
+<h2>Create Ticket</h2>
+
+<form asp-action="Create" method="post">
+
+    <label>Title</label><br />
+    <input asp-for="Title" class="form-control" /><br />
+
+    <label>Description</label><br />
+    <textarea asp-for="Description" class="form-control"></textarea><br />
+
+    <label>Priority</label><br />
+    <input asp-for="Priority" class="form-control" /><br />
+
+    <label>Status</label><br />
+    <input asp-for="Status" class="form-control" /><br />
+
+    <label>Raised By</label><br />
+    <input asp-for="RaisedBy" class="form-control" /><br />
+
+    <button type="submit" class="btn btn-success">
+        Save
+    </button>
+
+</form>
+
+<br />
+
+<a asp-action="Index">Back</a>
