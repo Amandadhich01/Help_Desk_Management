@@ -134,11 +134,7 @@ Ctrl + F5
 
 ---
 
-## Author
 
-**Abhinav Ashish**
-
-GitHub: https://github.com/abhinavashish1710
 
 ---
 
